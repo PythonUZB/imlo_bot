@@ -4,7 +4,7 @@ from aiogram import Bot, Dispatcher, executor, types
 from checkWord import checkWord
 
 
-API_TOKEN = '1994953478:AAHqSu2XMMQY5Kdy1gWac-XcUfDbZ2aGiNg'
+API_TOKEN = 'Bot-Token'
 
 
 # Configure logging
@@ -17,7 +17,7 @@ dp = Dispatcher(bot)
 
 @dp.message_handler(commands='start')
 async def send_welcome(message: types.Message):
-    await bot.send_message(1919023351, {message.from_user.username})
+    
     await message.reply(f"<b>Assalomu alaykum {message.from_user.first_name} \nBizni tanlaganingiz uchun raxmat 😊\nimlo_uzb Botiga Xush Kelibsiz!</b> ",parse_mode='HTML')
 
 @dp.message_handler(commands='help')
