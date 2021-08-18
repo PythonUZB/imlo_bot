@@ -22,7 +22,7 @@ async def send_welcome(message: types.Message):
 
 @dp.message_handler(commands='help')
 async def help_user(message: types.Message):
-    await message.reply(f"<b>{message.from_user.first_name} \nBotdan foydalanish uchun so'z yuboring. </b>😊 ",parse_mode='HTML')
+    await message.reply(f"<b>{message.from_user.first_name} \nBotdan foydalanish uchun so'z yuboring. \nXozircha faqat kirilcha so'zlar mavjud </b>😊 ",parse_mode='HTML')
 
 
 @dp.message_handler()
